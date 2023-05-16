@@ -19,7 +19,8 @@
     <div class="header-nav container hidden-xs">
       <!-- 导航logo -->
       <div class="header-nav-logo">
-        <img src="@/assets/img/logo_black.png">
+        <div><img src="@/assets/img/logo_black.png"></div>
+        <div>墨玉智能</div>
       </div>
       <!-- 导航内容 -->
       <ul class="header-nav-wrapper">
@@ -173,20 +174,18 @@ export default {
 }
 /* 导航栏logo */
 #header .header-nav .header-nav-logo {
-  width: 100px;
   height: 100%;
   float: left;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  font-family: HarmonyOS_Sans_SC_Bold;
 }
 /* 导航栏logo图片 */
 #header .header-nav .header-nav-logo img {
-  width: 95px;
-  height: 45px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 60px;
   margin: auto;
 }
 /* 导航栏 导航容器 */

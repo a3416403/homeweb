@@ -3,9 +3,9 @@
     <div class="logo">
       <img src="@/assets/img/logo_white.png" alt="logo图">
     </div>
-    <p class="title">公司企业网站模板</p>
+    <!-- <p class="title">公司企业网站模板</p> -->
     <p class="address_tel_fax">
-      <span>地址：公司地址公司地址公司地址公司地址</span>
+      <span>地址：南京市浦口区公园北路</span>
       <span>Tel：888-888-888</span>
       <span>Fax：8888-88888888</span>
     </p>
