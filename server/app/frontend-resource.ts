@@ -5,7 +5,7 @@
  * @LastEditTime: 2023-07-28 10:31:09
  */
 import config from '../config'
-import logger from '../logger';
+// import logger from '../logger';
 const request = require('request')
 
 // 前端资源
@@ -46,7 +46,7 @@ const getFrontendList = async () => {
           twWordPron.tp = data.phone_map_dict.tw
           resolve({ cn: cnWordPron, tw: twWordPron })
         } catch (e) {
-          logger.error(e)
+          // logger.error(e)
           reject(e)
         }
       }

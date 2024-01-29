@@ -1,10 +1,10 @@
 import express, { json } from 'express'
 import config from '../config'
-import logger from '../logger';
+// import logger from '../logger';
 import axios from 'axios'
-const tts = require('./tts')
+// const tts = require('./tts')
 const app = express();
-import getFrontendResource from './frontend-resource'
+// import getFrontendResource from './frontend-resource'
 // const port = 8979
 // var port = normalizePort('3000')
 var port = normalizePort(process.env.PORT || '3000')
@@ -15,8 +15,6 @@ app.get('/status', function (req, res) {
     res.send({ status: 'ok' })
 })
 axios.defaults.timeout = 120000
-frontendResource()
-frontendpronMap()
 app.get('/tt/getAccessToken',(req,res)=>{
   let path =`https://developer.toutiao.com/api/apps/v2/token`;
   let params = {
@@ -70,7 +68,7 @@ app.post('/tt/checkContent',(req,res)=>{
     res.send({code:200,"data":bodyN.data})
   })
 });
-app.use(tts)
+// app.use(tts)
 
 app.get("/h5/english_cmu_check",(req, res)=>{
   let text:any=req.query.text||''
@@ -114,43 +112,13 @@ app.post('/wechat/tts/getHttpLinkUrl', (req, res) => {
       })
     })
   })
-  async function frontendResource() {
-    let frontedResource:any = {}
-    try {
-      frontedResource = await getFrontendResource()
-    } catch (error) {
-      logger.error(error)
-    }
-  
-    global.cnFrontend = frontedResource.cn
-    global.twFrontend = frontedResource.tw
-    // console.log('frontendResource', frontedResource);
-    
-  }
-  async function frontendpronMap() {
-    // 前端资源
-    
-    let path = `${config.ttsHost}/api/frontend_resource?resource_dict=phone_map`
-    axios.get(path).then(response => {
-      if (!response || response.status !== 200) {
-        logger.error('err')
-        return 
-      }
-      let data = response.data
-      let cnWordPron = data.phone_map_dict.man
-      let pronMap = {}
-      cnWordPron.forEach((ele) => {
-        pronMap[ele.tp] = ele.t
-      })
-      global.cnPronMap = pronMap 
-    })
-  }
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
 process.on('uncaughtException', (err) => {
   // 处理错误，例如记录日志
-  logger.error('uncaughtException',err)
+  console.log('uncaughtException',err)
 });
 function normalizePort(val:string) {
     var port = parseInt(val, 10)
