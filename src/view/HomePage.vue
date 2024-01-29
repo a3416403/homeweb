@@ -21,18 +21,18 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
-    <!-- 大数据管理系统 -->
+    <!-- 短视频创作猫咪 -->
     <div id="bigData" class="container-fuild">
       <div class="row bigData-container">
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
-          <img class="img-responsive" src="@/assets/img/img1.png" alt="大数据管理系统">
+          <img class="img-responsive" src="@/assets/img/img1.png" alt="短视频创作猫咪">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-            大数据管理系统
+            短视频创作猫咪
             <small>/ Big Data Management System</small>
           </h2>
-          <p>当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
+          <p>当今领先的短视频创作工具平台。无论您是短视频用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
           <p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。</p>
           <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
           <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
@@ -145,26 +145,26 @@ export default {
         {
           img: require("@/assets/img/banner1.png"),
           path: "",
-          title: '您身边的IT专家1',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '达人热推的短视频创作工具',
+          content: '能够一键短视频成片，快速帮助您创作短视频，真正的完全放心可控，快速',
         },
         {
           img: require("@/assets/img/banner2.jpg"),
           path: "",
-          title: '您身边的IT专家2',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '短视频交流论坛',
+          content: '干货满满，集合创作、营销、分享知识，从我开始',
         },
         {
           img: require("@/assets/img/banner1.png"),
           path: "",
-          title: '您身边的IT专家3',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '提瓦特工具助手',
+          content: '快速帮你找到游戏功率，护肝养成',
         },
         {
           img: require("@/assets/img/banner2.jpg"),
           path: "",
-          title: '您身边的IT专家4',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '创作猫咪',
+          content: '能快速帮你寻找短视频的不足',
         }
       ],
       customerList: [
@@ -377,7 +377,7 @@ export default {
   margin-top: 1%;
   font-weight: 700;
 }
-/* 大数据管理系统 */
+/* 短视频创作猫咪 */
 #bigData {
   padding: 100px;
   transition: all ease 0.6s;

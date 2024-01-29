@@ -6,14 +6,12 @@
     <!-- <p class="title">公司企业网站模板</p> -->
     <p class="address_tel_fax">
       <span>地址：南京市浦口区公园北路</span>
-      <span>Tel：888-888-888</span>
-      <span>Fax：8888-88888888</span>
+      <span>Tel：17366270950</span>
     </p>
     <p class="email_wx">
-      <span>邮箱：liyunkun_11@163.com</span>
-      <span>公司微信号：ilyk_gg</span>
+      <span>邮箱：939500368@qq.com</span>
     </p>
-    <p class="copy">Copyright &copy; 2018 - 2019 公司名称公司名称</p>
+    <p class="copy">Copyright &copy; 2018 - 2019 南京市墨玉智能有限公司</p>
   </div>
 </template>
 <script>

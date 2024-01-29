@@ -27,7 +27,7 @@ export default {
                     name: '智能小镇管理系统'
                 },{
                     path: '/software/bigData',
-                    name: '大数据管理系统'
+                    name: '短视频创作猫咪'
                 }
             ]
         }

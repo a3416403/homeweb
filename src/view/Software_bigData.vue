@@ -1,6 +1,6 @@
 <template>
     <div id="Software">
-        大数据管理系统
+        短视频创作猫咪
     </div>
 </template>
 <script>
